@@ -9,6 +9,8 @@ for i in range(min,max):
             bolenler.append(j)
     bolenler.reverse()
     toplam=0
+    #burada diziyi "reverse()" ters çeviriyoruz ters çevirdikten sonraki 3 eleman ile "bolenler[0:3]" işlem yapıyoruz.
+    #Yani yarı mükemmel sayı için bölenlerin en büyük 3 tanesi ile işlem yapıyoruz.
     for x in range(0,len(bolenler[0:3])):
         toplam += bolenler[x]
     if(toplam == i):
